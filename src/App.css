@@ -1,20 +1,36 @@
 body{
-  font-family: roboto;
-  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
+  margin: 0;
 }
 
-.App{
-  max-width: 800px;
-  margin: auto;
+input{
+  box-sizing: border-box;
+  padding: 8px 8px 8px 20px;
+  font-size: 16px;
+  border: none;
+  background: #00987a3f;
+  border-radius: 50px;
+  margin: 5px;
+  width: 30%;
+}
+
+input:focus{
+  outline: none;
+}
+
+.app-bar{
+  background: rgb(255, 255, 255);
+  padding: 5px;
 }
 
 table{
   border-collapse: collapse;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: capitalize;
   border: 1px solid #00987a77 ;
+  margin: 10px;
 }
 
 th,td{
