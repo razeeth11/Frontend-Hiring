@@ -4,15 +4,36 @@ body{
   margin: 0;
 }
 
+.Data-table{
+  max-height: 100px;
+}
+
+.fetch{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.fetch button{
+  padding: 10px 25px;
+  font-size: 14px;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: aliceblue;
+  cursor: pointer;
+}
+
 input{
   box-sizing: border-box;
-  padding: 8px 8px 8px 20px;
-  font-size: 16px;
+  padding: 5px 5px 5px 10px;
+  font-size: 14px;
   border: none;
-  background: #00987a3f;
+  background: #ffffff;
   border-radius: 50px;
   margin: 5px;
-  width: 30%;
+  max-width: 150px;
+  color: #009879;
 }
 
 input:focus{
