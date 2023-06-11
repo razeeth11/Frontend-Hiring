@@ -11,6 +11,7 @@ function App() {
 
 function DataTable() {
   const [dataTable, setDataTable] = useState([]);
+  const [searchValue,setSearchValue] = useState('')
 
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/posts")
@@ -18,10 +19,19 @@ function DataTable() {
       .then((res) => setDataTable(res));
   }, []);
 
-  // console.log(dataTable);
+  const handleChange = (e)=> {
+    setSearchValue(e.target.value)
+    if(searchValue == ""){setDataTable(dataTable)}
+        const filterBySearch = dataTable.filter((item) => {
+            if (item.title.toLowerCase()
+                .includes(searchValue.toLowerCase())) { return item.title }
+        })
+        setDataTable(filterBySearch);
+  } 
+
   return (
     <div className="Data-table">
-      <input type="text" placeholder="Search....." /> 
+      <input type="text" placeholder="Search....." onChange={(e)=>handleChange(e)}/> 
       <table>
         <thead>
           <tr>
