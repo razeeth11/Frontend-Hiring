@@ -43,7 +43,6 @@ export function DataTable() {
 
   const buttonClick = () => {
     const reversed = [...dataTable].reverse();
-    console.log(reversed);
     setDataTable(reversed);
   };
 
