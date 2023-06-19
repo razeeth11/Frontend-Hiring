@@ -15,6 +15,17 @@
    - Use Material UI
      - Buttons
    - Deployed in Netlify ✅
+
+## Routing : 
+ - Fetch
+   - Click the fetch button to navigate Data page 
+ - Data Table 
+   - Fetched data displayed in table
+   - Search bar ( Title and Body )
+   - Ascending and Descending button 🔁
+   - Click on specific data to navigate to Single post Page contains Title and Body of the Data
+ - Single Post page
+   - Title and Body
     
  ## Project structure
    <br>The project structure follows a common convention used in many React applications. Here's a high-level overview of the important files and directories:
